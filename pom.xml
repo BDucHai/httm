@@ -18,6 +18,17 @@
 	</properties>
 	<dependencies>
 		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>5.3.9.RELEASE</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
+    	</dependency>
+		<dependency>
         	<groupId>com.cloudinary</groupId>
         	<artifactId>cloudinary-http44</artifactId>
         	<version>1.28.1</version>
